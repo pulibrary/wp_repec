@@ -61,7 +61,7 @@ while ($element=each($series))
 	$shandle= $element["value"];
 
 	$sql = "SELECT *  FROM workingpaper";
-	$sql = $sql." where SectionURLID = '".$sectioniddb."';";
+	$sql = $sql." where SectionURLID = '".$sectioniddb."' AND Suppress=0;";
 
 
 	//print($sql);
